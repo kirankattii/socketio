@@ -23,9 +23,7 @@ app.use(cors({
 
 
 
-app.get('/', (req, res) => {
-  res.send("Wokring")
-})
+
 app.use('/api/auth', authRouter)
 app.use('/api/messages', messageRoutes)
 
@@ -45,4 +43,3 @@ server.listen(PORT, () => {
 })
 
 
-// 
