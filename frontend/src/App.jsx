@@ -32,7 +32,7 @@ const App = () => {
     )
 
   return (
-    <div className='' data-theme={theme}>
+    <div className='' data-theme={"black"}>
       <Navbar />
       <Routes>
         <Route path='/' element={authUser ? <HomePage /> : <Navigate to="/login" />} />
